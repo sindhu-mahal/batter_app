@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>iLand Multipurpose Landing Page Template</title>
+<title>Batter App | Make Simple</title>
 <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="iLand Multipurpose Landing Page Template">
@@ -20,15 +20,15 @@
 <style>
 @keyframes float {
 	0% {
-	
+		box-shadow:  rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
 	50% {
-		
+		box-shadow: rgba(0,0,0,0.2);
 		transform: translatey(-20px);
 	}
 	100% {
-		
+		box-shadow: rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
 }
@@ -46,8 +46,25 @@
 
 }
 
-
+.iframe{
+    width: 800px;
+    height: 450px;
+}
 </style>
+<script>
+$(document).ready(function(){
+  $("#myModal").on("hidden.bs.modal",function(){
+    $("#iframeYoutube").attr("src","#");
+  })
+})
+
+function changeVideo(vId){
+  var iframe=document.getElementById("iframeYoutube");
+  iframe.src="https://www.youtube.com/embed/"+vId;
+
+  $("#myModal").modal("show");
+}
+</script>
 </head>
 <body>
 <div class="wrapper">
@@ -78,21 +95,22 @@
     <div class="hero-section">
       <div class="container nopadding">
         <div class="col-md-5">
-			<div class="avatar"> <img class="img-responsive wow fadeInUp" data-wow-delay="0.1s" src="images/images/Left Pers.png" alt="App" /> 
+			<div class="avatar"> <img style="margin-top: 27px;" class="img-responsive wow fadeInUp" data-wow-delay="0.1s" src="images/images/Left Pers.png" alt="App" /> 
 			</div>
 		</div>
         <div class="col-md-7">
           <div class="hero-content">
-            <h1 class="wow fadeInUp" data-wow-delay="0.1s">Landing Page for Apple Watch</h1>
-            <p class="wow fadeInUp" data-wow-delay="0.2s"> Beoplay A1 bluetooth speakers image on the left is owned by Bang and Olufsen and is released under creative
-              commons lisence. </p>
+            <h1 class="wow fadeInUp" data-wow-delay="0.1s">Batter Making, Automated</h1>
+            <p class="wow fadeInUp" data-wow-delay="0.2s"> The World first Fully automated Batter Making Machine Coming to your Home soon, Be Amoung the first to get it. </p>
+			  <a href="#" class="btn btn-action wow fadeInUp">How it works</a>
             <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
+			
               <form class="subscribe-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
               <input class="mail" type="email" name="email" placeholder="Join the wait list" autocomplete="off" id="subemail">
               <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
             </form>
               <!-- subscribe message -->
-        <div id="mesaj"></div>
+				<div id="mesaj"></div>
         <!-- subscribe message --> 
             </div>
           </div>
@@ -122,21 +140,21 @@
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
             <div class="icon"> <i class="ion-ios-analytics-outline"></i> </div>
             <div class="feature-single">
-              <h1>Lorem Ipsum</h1>
+              <h1>Healthy</h1>
               <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
             <div class="icon"> <i class="ion-ios-briefcase-outline"></i> </div>
             <div class="feature-single">
-              <h1>Lorem Ipsum</h1>
+              <h1>One Touch</h1>
               <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
             <div class="icon"> <i class="ion-ios-chatboxes-outline"></i> </div>
             <div class="feature-single">
-              <h1>Lorem Ipsum</h1>
+              <h1>Easy Clean</h1>
               <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
             </div>
           </div>
@@ -146,21 +164,21 @@
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
             <div class="icon"> <i class="ion-ios-cloud-download-outline"></i> </div>
             <div class="feature-single">
-              <h1>Lorem Ipsum</h1>
+              <h1>Economic</h1>
               <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
             <div class="icon"> <i class="ion-ios-copy-outline"></i> </div>
             <div class="feature-single">
-              <h1>Lorem Ipsum</h1>
+              <h1>Control</h1>
               <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
             <div class="icon"> <i class="ion-ios-game-controller-b-outline"></i> </div>
             <div class="feature-single">
-              <h1>Lorem Ipsum</h1>
+              <h1>Smart Fermentaion</h1>
               <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
             </div>
           </div>
@@ -168,10 +186,10 @@
       </div>
     </div>
     <div class="split-features">
-      <div class="col-md-6 nopadding">
-        <div class="split-image"> <img class="img-responsive wow fadeIn" src="images/app_image.png" alt="Image" /> </div>
+      <div class="col-md-12 nopadding">
+        <div class="split-image"> <img class="img-responsive wow fadeIn" src="images/images/Product photo for deck 1.jpeg" alt="Image" /> </div>
       </div>
-      <div class="col-md-6 nopadding">
+   <!--   <div class="col-md-6 nopadding">
         <div class="split-content">
           <h1 class="wow fadeInUp">Designed for effective product landing page</h1>
           <p class="wow fadeInUp"> Pellentesque eget dolor gravida, tempus purus ac, ultricies mauris. Etiam est nisl, molestie sed egestas bibendum, varius eu diam. Suspendisse est metus, ultrices sit amet dolor in, rhoncus malesuada mi.</p>
@@ -182,57 +200,90 @@
             <li>Curabitur egestas justo neque viverra vel. </li>
           </ul>
         </div>
-      </div>
+      </div>-->
     </div>
     
+	
+	<div class="container">
+		<div class="row">
+			<img class="img-responsive wow fadeIn" onclick="changeVideo('e80BbX05D7Y')" src="images/images/final cut.png" alt="Image" />
+			
+			<a onclick="changeVideo('ReRcHdeUG9Y')">video-2</a>
+
+
+
+<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Subscription</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+				  
+					<iframe id="iframeYoutube" width="560" height="315"  src="https://www.youtube.com/embed/e80BbX05D7Y" frameborder="0" allowfullscreen></iframe> 
+					
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+    </div>
+
+  </div>
     
      <div class="split-features2">
       
-      <div class="col-md-6 nopadding">
-        <div class="split-content second">
-          <h1 class="wow fadeInUp">The best way to show your product to the world</h1>
-          <p class="wow fadeInUp"> Pellentesque eget dolor gravida, tempus purus ac, ultricies mauris. Etiam est nisl, molestie sed egestas bibendum, varius eu diam. Suspendisse est metus, ultrices sit amet dolor in, rhoncus malesuada mi.</p>
-          <ul class="wow fadeInUp">
-            <li>Nulla ornare purus non consequat ultricies.</li>
-            <li>Etiam est nisl, molestie sed egestas bibendum</li>
-            <li>Aliquam vel euismod elit, sed suscipit est.</li>
-            <li>Curabitur egestas justo neque viverra vel. </li>
-          </ul>
-        </div>
-      </div>
+		<div class="col-md-6 nopadding">
+			<div class="split-content second"style="padding-top: 50px;">
+			  <h1 class="wow fadeInUp">The best way to show your product to the world</h1>
+			  <p class="wow fadeInUp"> Pellentesque eget dolor gravida, tempus purus ac, ultricies mauris. Etiam est nisl, molestie sed egestas bibendum, varius eu diam. Suspendisse est metus, ultrices sit amet dolor in, rhoncus malesuada mi.</p>
+			  <ul class="wow fadeInUp">
+				<li>Nulla ornare purus non consequat ultricies.</li>
+				<li>Etiam est nisl, molestie sed egestas bibendum</li>
+				<li>Aliquam vel euismod elit, sed suscipit est.</li>
+				<li>Curabitur egestas justo neque viverra vel. </li>
+			  </ul>
+			</div>
+		</div>
       <div class="col-md-6 nopadding">
         <div class="split-image"> <img class="img-responsive wow fadeIn" src="images/images/final cut.png" alt="Image" /> </div>
       </div>
     </div>
-    
-    
+
     
     <div class="pitch text-center">
       <div class="container">
         <div class="pitch-intro">
-          <h1 class="wow fadeInDown" data-wow-delay="0.2s">More Awesome Features</h1>
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s"> More Awesome Features</h1>
           <p class="wow fadeInDown" data-wow-delay="0.2s"> Pellentesque eget dolor gravida, tempus purus ac, ultricies mauris. Etiam est nisl, molestie sed egestas bibendum, varius eu diam. Suspendisse est metus, ultrices sit amet dolor in, rhoncus malesuada mi.</p>
         </div>
         <div class="col-md-12">
           <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
             <div class="pitch-icon"> <i class="ion-ios-checkmark-outline"></i> </div>
             <div class="pitch-content">
-              <h1>Great Options</h1>
-              <p> Aliquam vel euismod elit, sed suscipit est. Sed tincidunt venenatis ligula ac luctus. Fusce egestas volutpat mi sed pellentesque. </p>
+              <h1>Ease Is Selecting</h1>
+              <p> Just select the no of Idly or Dosa from the mobile app smart batter will calculate the litre of batter need for it. </p>
             </div>
           </div>
           <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
             <div class="pitch-icon"> <i class="ion-ios-mic-outline"></i> </div>
             <div class="pitch-content">
-              <h1>Voice Callings</h1>
-              <p> Aliquam vel euismod elit, sed suscipit est. Sed tincidunt venenatis ligula ac luctus. Fusce egestas volutpat mi sed pellentesque. </p>
+              <h1>Save Your Recipe</h1>
+              <p> Save your batter recipe just once and make any amount of batter with the selected recipe. </p>
             </div>
           </div>
           <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
             <div class="pitch-icon"> <i class="ion-ios-folder-outline"></i> </div>
             <div class="pitch-content">
-              <h1>Sharing Files</h1>
-              <p> Aliquam vel euismod elit, sed suscipit est. Sed tincidunt venenatis ligula ac luctus. Fusce egestas volutpat mi sed pellentesque.  </p>
+              <h1>Smart Schedule</h1>
+              <p> Just schedule for a week and smart batter will make batter automatically for you.  </p>
             </div>
           </div>
         </div>
@@ -242,9 +293,13 @@
       <div class="container">
         <div class="sub-inner">
           <h1 class="wow fadeInUp">Creative Landing App For Your Easy Life! Simple Reliable & Understandable for your customers </h1>
-          <a href="#" class="btn btn-action wow fadeInUp">Buy now</a> </div>
+          <!--<a href="#" class="btn btn-action wow fadeInUp">Buy now</a> --></div>
+		  
       </div>
+	  
     </div>
+
+	
     <div id="review-section" class="review-section">
       <div class="container">
         <div class="col-md-10 col-md-offset-1">
@@ -371,9 +426,9 @@
     <!-- Footer Section -->
     <div class="footer">
       <div class="container">
-        <div class="col-md-7"> <img src="images/logo1.png" width="80" height="30" alt="Image" />
+        <div class="col-md-7"> <img src="images/logo1.png" width="175" height="80" alt="Image" />
           <p> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis
-tempore consequuntur officia ducimus unde doloribus quod unt repell  </p>
+	tempore consequuntur officia ducimus unde doloribus quod unt repell  </p>
           <div class="footer-text">
             <p> Copyright © 2016 iLand. All Rights Reserved. Made with <i class="ion-heart"></i> by <a href="http://www.designstub.com/">Designstub</a></p>
           </div>
@@ -388,7 +443,8 @@ tempore consequuntur officia ducimus unde doloribus quod unt repell  </p>
     </div>
     
     <!-- Scroll To Top --> 
-    
+    <a href="#" class="btn btn-action back-to-top page-scroll" style="display:inline; width:183px;    background: rgb(255, 128, 52);">How it works</a>
+	<br>
     <a id="back-top" class="back-to-top page-scroll" href="#main"> <i class="ion-ios-arrow-thin-up"></i> </a> 
     
     <!-- Scroll To Top Ends--> 
