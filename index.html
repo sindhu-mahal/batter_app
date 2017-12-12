@@ -50,6 +50,56 @@
     width: 800px;
     height: 450px;
 }
+
+.oval {
+	background: rgb(226, 150, 104);
+	margin: 0;
+	position: fixed;
+	bottom: 30px;
+	right: 65px;
+	width: 155px;
+	height: 36px; 
+	border-radius: 40px; 
+	z-index: 90;
+	display: none;
+	text-decoration: none;
+	color: #0E1729;
+}
+
+.oval i {
+	position: relative;
+	left: 13px;
+	top: 8px;
+	font-size: 24px;
+	color: #FFFFFF;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.oval:hover {
+    background: rgb(255, 128, 52);
+    color: #FFFFFF;
+}
+
+.oval:hover i {
+	top: 6px;
+}
+
+.oval:focus {
+    color: #FFFFFF;
+}
+
+
+ .oval {
+	background: rgba(146, 127, 84, 0.5);
+}
+
+.oval {
+	background: rgba(146, 127, 84, 0.9);
+}
+
 </style>
 <script>
 $(document).ready(function(){
@@ -69,7 +119,7 @@ function changeVideo(vId){
 <body>
 <div class="wrapper">
   <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top"style="padding-top: 0px; height: 64px;">
       <div class="container"> 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -105,7 +155,7 @@ function changeVideo(vId){
 			  <a href="#" class="btn btn-action wow fadeInUp">How it works</a>
             <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
 			
-              <form class="subscribe-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
+            <form class="subscribe-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
               <input class="mail" type="email" name="email" placeholder="Join the wait list" autocomplete="off" id="subemail">
               <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
             </form>
@@ -426,11 +476,11 @@ function changeVideo(vId){
     <!-- Footer Section -->
     <div class="footer">
       <div class="container">
-        <div class="col-md-7"> <img src="images/logo1.png" width="175" height="80" alt="Image" />
+        <div class="col-md-7"> <img src="images/logo1.png" width="205" height="65" alt="Image" />
           <p> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis
 	tempore consequuntur officia ducimus unde doloribus quod unt repell  </p>
           <div class="footer-text">
-            <p> Copyright © 2016 iLand. All Rights Reserved. Made with <i class="ion-heart"></i> by <a href="http://www.designstub.com/">Designstub</a></p>
+           <!-- <p> Copyright © 2016 iLand. All Rights Reserved. Made with <i class="ion-heart"></i> by <a href="http://www.designstub.com/">Designstub</a></p>-->
           </div>
         </div>
         <div class="col-md-5">
@@ -443,7 +493,7 @@ function changeVideo(vId){
     </div>
     
     <!-- Scroll To Top --> 
-    <a href="#" class="btn btn-action back-to-top page-scroll" style="display:inline; width:183px;    background: rgb(255, 128, 52);">How it works</a>
+    <a href="#" class="btn btn-action oval page-scroll" style="display:inline;     background: rgb(255, 128, 52);">How it works</a>
 	<br>
     <a id="back-top" class="back-to-top page-scroll" href="#main"> <i class="ion-ios-arrow-thin-up"></i> </a> 
     
